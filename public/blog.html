@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Blog</title>
     <style>
-      /* body {
-        background-image: url("./images/blue-wallpaper.jpg")
-      } */
+      body {
+        background-color:rgb(230,242,230)
+      }
       nav {
         background: rgba(0,0,0,.1);
       }
@@ -29,7 +29,7 @@
       }
     </style>
   </head>
-  <body class="text-center">
+  <body>
     <!-- <img src="./assets/images/blue-universe.jpg"></img> -->
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -46,14 +46,29 @@
               <a class="nav-item nav-link" href="resume.html">Resume </a>
               <a class="nav-item nav-link" href="/projects.html">Projects</a>
               <a class="nav-item nav-link active" href="#">Blog<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="pets.html">Pets</a>
             </div>
           </div>
         </nav>
     </div>
   </header>
 
-  <main role="main" class="inner cover">
-    <p>insert blog post</p>
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8 blog-main"><div class="pb-3 mb-4 font-italic border-bottom">
+        <h1>Blog</h1>
+        <p>insert styling</p>
+      </div></div>
+    </div>
+    <div class="blog-post">
+      <h2 class="blog-post-title">First Post</h2>
+      <p class="blog-post-meta">27th December 2019 </p>
+      <p>I decided to make my website look a little more profesional and to show off some of what I've learned. This is still quite a rough draft. Also I haven't really written much in a while so thats a bit rusty too.</p>
+      <p>My plan here is to walk through what I've done and why. So initially I had this website set up to show my resume. I built it using a template on w3 schools. It looked decent, but needed updating. I rebuilt it using bootstrap. It needs a bit more styling and probably some rewording. I slapped together a basic homepage with the links to the various planned pages; home, resume, projects, and blog. I copied that and changed a few things to make the blank templates for the project and blog pages. Then I initialized express and set it up so that I could host locally using node. Eventually I plan to use a templating engine and add in proper routing. At the moment its all just static pages in the public folder. I also need to style everything.</p>
+      <p>On the projects page I plan on showcasing the stuff I've worked on and am working on. This will likely be pictures which I can slap into a carosel. I can even perhaps link those pictures to a more in depth post.</p>
+      <p>Also at the moment this post is written directly on the page. I plan to move all that to individual pages and let the engine handle the rest.</p>
+
+    </div>
   </main>
 
   <footer class="mastfoot mt-auto">

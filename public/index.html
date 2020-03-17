@@ -6,13 +6,36 @@
     <meta name="description" content="">
     <meta name="generator" content="Jekyll v3.8.6">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Hub</title>
     <style>
       body {
-        background-image: url("./images/blue-wallpaper.jpg")
+        background-color:rgb(230,242,230)
       }
       nav {
         background: rgba(0,0,0,.1);
+      }
+      .cover{
+        padding: 30px;
+        margin: 30px;
+      }
+      .card-outer {
+        background: rgb(230,235,230);
+        box-shadow: 10px 10px rgb(210,220,210);
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .card-inner {
+        margin: 10px
+      }
+      .card {
+        border-style: none;
+        height: 100%;
+        background: rgb(200,230,200);
       }
 
       .bd-placeholder-img {
@@ -47,17 +70,68 @@
               <a class="nav-item nav-link" href="resume.html">Resume </a>
               <a class="nav-item nav-link" href="projects.html">Projects</a>
               <a class="nav-item nav-link" href="blog.html">Blog</a>
+              <a class="nav-item nav-link" href="pets.html">Pets</a>
             </div>
           </div>
         </nav>
     </div>
   </header>
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Cover your page.</h1>
-    <p class="lead"></p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+  <main role="main" class="">
+    <img src='images/IMG_20200203_090005.jpg'><h1 class="cover-heading"></h1></img>
+    <div class="row">
+      <div class="col-8">
+        <div class="card card-outer">
+          <div class="card card-inner">
+            <h3>Welcome to my site</h3>
+            <p>I initially built this site to host my resume. I've expanded it to show off some of my projects, passions and pets.</p>
+            <p>Currently I'm a consultant in the exciting world of email deliverability. Formerly I worked in coal analysis.</p>
+            <p>In my spare time I like to game (board and video), 3d print, and ride my bike.</p>
+            <div class="row">
+              <img src='images/Arkwright.jpg' style='width: 45%; height: 90%; padding:10px'></img>
+
+              <img src='images/bike.jpg' style='width: 45%; height: 90%; padding:10px'></img>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card-outer card">
+          <div class="card">
+            <a href=projects.html#watermelon><img src='images/watermelon.jpg'></img></a>
+          </div>
+        </br>
+          <div class="card card-inner">
+            <p>I don't remember where I saw this, but I thought it would be fun. I enjoy making jack-o-lanterns and also enjoy watermelon in the summer. It wasn't too difficult to make. The tricky part was removing the fruit. I sliced it in half and then did some crosshatching. I'm not actually sure how to describe this in text. Basically I did the horizontal slices and then angled the vertical slices. After which I was able to dump out a good bit of the fruit and pick out the rest with a knife, spoon, or fork. Once it was hollow I cut the face just like any other jack-o-lantern. I put it on the porch for a few days. I imagine the package delivery folks had a good laugh.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </br>
+    <!-- <div class="row">
+      <div class="col-6">
+        <div class="card card-outer">
+          <div class="card card-inner">
+            Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank.
+          </div>
+          <div class="card card-inner">
+            Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake.
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card card-outer">
+          <div class="card card-inner">
+            Just say anything, George, say what ever's natural, the first thing that comes to your mind. Take that you mutated son-of-a-bitch. My pine, why you. You space bastard, you killed a pine. You do? Yeah, it's 8:00. Hey, McFly, I thought I told you never to come in here. Well it's gonna cost you. How much money you got on you?
+          </div>
+          <div class="card card-inner">
+            Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.
+          </div>
+        </div>
+      </div>
+    </div> -->
+
     </p>
   </main>
 
